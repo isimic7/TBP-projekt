@@ -51,6 +51,7 @@
             this.btnUnosTrudnice = new System.Windows.Forms.Button();
             this.btnObrisiTrudnicu = new System.Windows.Forms.Button();
             this.btnAžuriraj = new System.Windows.Forms.Button();
+            this.btnFrmUltrazvuk = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTrudnice)).BeginInit();
             this.SuspendLayout();
             // 
@@ -239,7 +240,7 @@
             // 
             // btnObrisiTrudnicu
             // 
-            this.btnObrisiTrudnicu.Location = new System.Drawing.Point(685, 214);
+            this.btnObrisiTrudnicu.Location = new System.Drawing.Point(638, 211);
             this.btnObrisiTrudnicu.Name = "btnObrisiTrudnicu";
             this.btnObrisiTrudnicu.Size = new System.Drawing.Size(108, 57);
             this.btnObrisiTrudnicu.TabIndex = 21;
@@ -257,11 +258,21 @@
             this.btnAžuriraj.UseVisualStyleBackColor = true;
             this.btnAžuriraj.Click += new System.EventHandler(this.btnAžuriraj_Click);
             // 
+            // btnFrmUltrazvuk
+            // 
+            this.btnFrmUltrazvuk.Location = new System.Drawing.Point(865, 208);
+            this.btnFrmUltrazvuk.Name = "btnFrmUltrazvuk";
+            this.btnFrmUltrazvuk.Size = new System.Drawing.Size(113, 60);
+            this.btnFrmUltrazvuk.TabIndex = 23;
+            this.btnFrmUltrazvuk.Text = "Pregledaj ultrazvuke";
+            this.btnFrmUltrazvuk.UseVisualStyleBackColor = true;
+            // 
             // FormaTrudnice
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1127, 450);
+            this.Controls.Add(this.btnFrmUltrazvuk);
             this.Controls.Add(this.btnAžuriraj);
             this.Controls.Add(this.btnObrisiTrudnicu);
             this.Controls.Add(this.btnUnosTrudnice);
@@ -320,5 +331,6 @@
         private System.Windows.Forms.Button btnUnosTrudnice;
         private System.Windows.Forms.Button btnObrisiTrudnicu;
         private System.Windows.Forms.Button btnAžuriraj;
+        private System.Windows.Forms.Button btnFrmUltrazvuk;
     }
 }

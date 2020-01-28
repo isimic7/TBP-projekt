@@ -30,6 +30,7 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.btnTrudnice = new System.Windows.Forms.Button();
+            this.btnPrikazLijecnika = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -44,7 +45,7 @@
             // 
             // btnTrudnice
             // 
-            this.btnTrudnice.Location = new System.Drawing.Point(19, 49);
+            this.btnTrudnice.Location = new System.Drawing.Point(19, 61);
             this.btnTrudnice.Name = "btnTrudnice";
             this.btnTrudnice.Size = new System.Drawing.Size(122, 46);
             this.btnTrudnice.TabIndex = 1;
@@ -52,11 +53,22 @@
             this.btnTrudnice.UseVisualStyleBackColor = true;
             this.btnTrudnice.Click += new System.EventHandler(this.btnTrudnice_Click);
             // 
+            // btnPrikazLijecnika
+            // 
+            this.btnPrikazLijecnika.Location = new System.Drawing.Point(187, 61);
+            this.btnPrikazLijecnika.Name = "btnPrikazLijecnika";
+            this.btnPrikazLijecnika.Size = new System.Drawing.Size(122, 46);
+            this.btnPrikazLijecnika.TabIndex = 2;
+            this.btnPrikazLijecnika.Text = "Liječnici";
+            this.btnPrikazLijecnika.UseVisualStyleBackColor = true;
+            this.btnPrikazLijecnika.Click += new System.EventHandler(this.btnPrikazLijecnika_Click);
+            // 
             // PocetnaForma
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(386, 450);
+            this.Controls.Add(this.btnPrikazLijecnika);
             this.Controls.Add(this.btnTrudnice);
             this.Controls.Add(this.label1);
             this.Name = "PocetnaForma";
@@ -71,6 +83,7 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnTrudnice;
+        private System.Windows.Forms.Button btnPrikazLijecnika;
     }
 }
 

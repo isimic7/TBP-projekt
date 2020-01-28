@@ -24,5 +24,11 @@ namespace Pracenje_Trudnoce_App
             FormaTrudnice forma = new FormaTrudnice(connString);
             forma.ShowDialog();
         }
+
+        private void btnPrikazLijecnika_Click(object sender, EventArgs e)
+        {
+            FormaLiječnici forma = new FormaLiječnici(connString);
+            forma.ShowDialog();
+        }
     }
 }

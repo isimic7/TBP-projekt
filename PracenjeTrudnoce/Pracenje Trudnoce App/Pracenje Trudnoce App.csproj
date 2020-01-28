@@ -83,11 +83,17 @@
     <Compile Include="FormaAžuriranjeTrud.Designer.cs">
       <DependentUpon>FormaAžuriranjeTrud.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormaPočetna.cs">
+    <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormaPočetna.Designer.cs">
-      <DependentUpon>FormaPočetna.cs</DependentUpon>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormaLiječnici.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormaLiječnici.Designer.cs">
+      <DependentUpon>FormaLiječnici.cs</DependentUpon>
     </Compile>
     <Compile Include="FormaTrudnice.cs">
       <SubType>Form</SubType>
@@ -95,16 +101,28 @@
     <Compile Include="FormaTrudnice.Designer.cs">
       <DependentUpon>FormaTrudnice.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormaUnosLijecnika.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormaUnosLijecnika.Designer.cs">
+      <DependentUpon>FormaUnosLijecnika.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FormaAžuriranjeTrud.resx">
       <DependentUpon>FormaAžuriranjeTrud.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormaPočetna.resx">
-      <DependentUpon>FormaPočetna.cs</DependentUpon>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormaLiječnici.resx">
+      <DependentUpon>FormaLiječnici.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormaTrudnice.resx">
       <DependentUpon>FormaTrudnice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormaUnosLijecnika.resx">
+      <DependentUpon>FormaUnosLijecnika.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
