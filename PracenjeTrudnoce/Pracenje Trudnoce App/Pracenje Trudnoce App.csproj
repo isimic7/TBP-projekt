@@ -77,11 +77,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="FormaAžuriranjeTrud.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="FormaAžuriranjeTrud.Designer.cs">
+      <DependentUpon>FormaAžuriranjeTrud.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormaPočetna.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormaPočetna.Designer.cs">
+      <DependentUpon>FormaPočetna.cs</DependentUpon>
     </Compile>
     <Compile Include="FormaTrudnice.cs">
       <SubType>Form</SubType>
@@ -91,8 +97,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="FormaAžuriranjeTrud.resx">
+      <DependentUpon>FormaAžuriranjeTrud.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormaPočetna.resx">
+      <DependentUpon>FormaPočetna.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormaTrudnice.resx">
       <DependentUpon>FormaTrudnice.cs</DependentUpon>
