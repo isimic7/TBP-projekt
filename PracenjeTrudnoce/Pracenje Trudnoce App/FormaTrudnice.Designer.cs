@@ -249,7 +249,7 @@
             this.btnObrisiTrudnicu.Name = "btnObrisiTrudnicu";
             this.btnObrisiTrudnicu.Size = new System.Drawing.Size(108, 57);
             this.btnObrisiTrudnicu.TabIndex = 21;
-            this.btnObrisiTrudnicu.Text = "Obriši";
+            this.btnObrisiTrudnicu.Text = "Obriši zapis";
             this.btnObrisiTrudnicu.UseVisualStyleBackColor = true;
             this.btnObrisiTrudnicu.Click += new System.EventHandler(this.btnObrisiTrudnicu_Click);
             // 
