@@ -190,6 +190,43 @@ namespace Pracenje_Trudnoce_App
             }
         }
 
+        private void naruciNoviUltrazvuk()
+        {
+            if(dgvTrudnice.SelectedRows[0].Index != 0)
+            {
+                conn.Open();
+
+                sql = @"select * from naruci_sljedeci_ultrazvuk(@trudnica)";
+
+                naredba = new NpgsqlCommand(sql, conn);
+                naredba.Parameters.AddWithValue("@trudnica", OznaciTrudnicu());
+
+                naredba.ExecuteScalar();
+
+                conn.Close();
+            }
+        }
+
+        private void naruciNovuKontrolu()
+        {
+            if (dgvTrudnice.SelectedRows[0].Index != 0)
+            {
+                //string trudnica = dgvTrudnice.SelectedRows[0].Cells[0].Value.ToString();
+                conn.Open();
+
+                sql = @"select * from naruci_novu_kontrolu(@trudnica)";
+
+                naredba = new NpgsqlCommand(sql, conn);
+                naredba.Parameters.AddWithValue("@trudnica", OznaciTrudnicu());
+
+                naredba.ExecuteScalar();
+
+                conn.Close();
+            }
+        }
+
+
+
         private void FormaTrudnice_Load(object sender, EventArgs e)
         {
             ucitajTrudnice();
@@ -217,6 +254,44 @@ namespace Pracenje_Trudnoce_App
             }
             ucitajTrudnice();
 
+        }
+
+        private void btnFrmUltrazvuk_Click(object sender, EventArgs e)
+        {
+            FormaUltrazvuk forma = new FormaUltrazvuk(konekcija);
+            forma.ShowDialog();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            naruciNoviUltrazvuk();
+            FormaUltrazvuk forma = new FormaUltrazvuk(konekcija);
+            forma.ShowDialog();
+        }
+
+        private void btnPrikazSvihTrudnica_Click(object sender, EventArgs e)
+        {
+            ucitajTrudnice();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            FormaCTG forma = new FormaCTG(konekcija);
+            forma.ShowDialog();
+
+        }
+
+        private void btnPrikazKontrola_Click(object sender, EventArgs e)
+        {
+            FormKontrola forma = new FormKontrola(konekcija);
+            forma.ShowDialog();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            naruciNovuKontrolu();
+            FormKontrola forma = new FormKontrola(konekcija);
+            forma.ShowDialog();
         }
     }
 }

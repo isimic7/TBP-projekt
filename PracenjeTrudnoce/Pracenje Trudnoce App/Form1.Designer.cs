@@ -67,7 +67,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(386, 450);
+            this.ClientSize = new System.Drawing.Size(339, 149);
             this.Controls.Add(this.btnPrikazLijecnika);
             this.Controls.Add(this.btnTrudnice);
             this.Controls.Add(this.label1);

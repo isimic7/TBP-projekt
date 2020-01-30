@@ -52,6 +52,11 @@
             this.btnObrisiTrudnicu = new System.Windows.Forms.Button();
             this.btnAžuriraj = new System.Windows.Forms.Button();
             this.btnFrmUltrazvuk = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.btnPrikazSvihTrudnica = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.btnPrikazKontrola = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTrudnice)).BeginInit();
             this.SuspendLayout();
             // 
@@ -260,18 +265,74 @@
             // 
             // btnFrmUltrazvuk
             // 
-            this.btnFrmUltrazvuk.Location = new System.Drawing.Point(865, 208);
+            this.btnFrmUltrazvuk.Location = new System.Drawing.Point(1002, 198);
             this.btnFrmUltrazvuk.Name = "btnFrmUltrazvuk";
             this.btnFrmUltrazvuk.Size = new System.Drawing.Size(113, 60);
             this.btnFrmUltrazvuk.TabIndex = 23;
             this.btnFrmUltrazvuk.Text = "Pregledaj ultrazvuke";
             this.btnFrmUltrazvuk.UseVisualStyleBackColor = true;
+            this.btnFrmUltrazvuk.Click += new System.EventHandler(this.btnFrmUltrazvuk_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(512, 363);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(113, 60);
+            this.button1.TabIndex = 24;
+            this.button1.Text = "Naruči novi ultrazvuk za odabranu  trudnicu";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btnPrikazSvihTrudnica
+            // 
+            this.btnPrikazSvihTrudnica.Location = new System.Drawing.Point(638, 284);
+            this.btnPrikazSvihTrudnica.Name = "btnPrikazSvihTrudnica";
+            this.btnPrikazSvihTrudnica.Size = new System.Drawing.Size(108, 57);
+            this.btnPrikazSvihTrudnica.TabIndex = 25;
+            this.btnPrikazSvihTrudnica.Text = "Prikaži sve";
+            this.btnPrikazSvihTrudnica.UseVisualStyleBackColor = true;
+            this.btnPrikazSvihTrudnica.Click += new System.EventHandler(this.btnPrikazSvihTrudnica_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(1002, 321);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(108, 60);
+            this.button2.TabIndex = 26;
+            this.button2.Text = "Prikaz trudnica spremnih za CTG";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // btnPrikazKontrola
+            // 
+            this.btnPrikazKontrola.Location = new System.Drawing.Point(1002, 265);
+            this.btnPrikazKontrola.Name = "btnPrikazKontrola";
+            this.btnPrikazKontrola.Size = new System.Drawing.Size(113, 46);
+            this.btnPrikazKontrola.TabIndex = 27;
+            this.btnPrikazKontrola.Text = "Prikaži kontrolne preglede";
+            this.btnPrikazKontrola.UseVisualStyleBackColor = true;
+            this.btnPrikazKontrola.Click += new System.EventHandler(this.btnPrikazKontrola_Click);
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(638, 363);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(113, 60);
+            this.button3.TabIndex = 28;
+            this.button3.Text = "Nruči novi kontrolni pregled za odabranu trudnicu";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // FormaTrudnice
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1127, 450);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.btnPrikazKontrola);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnPrikazSvihTrudnica);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnFrmUltrazvuk);
             this.Controls.Add(this.btnAžuriraj);
             this.Controls.Add(this.btnObrisiTrudnicu);
@@ -332,5 +393,10 @@
         private System.Windows.Forms.Button btnObrisiTrudnicu;
         private System.Windows.Forms.Button btnAžuriraj;
         private System.Windows.Forms.Button btnFrmUltrazvuk;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnPrikazSvihTrudnica;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnPrikazKontrola;
+        private System.Windows.Forms.Button button3;
     }
 }

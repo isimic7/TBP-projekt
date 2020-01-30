@@ -21,8 +21,8 @@ namespace Pracenje_Trudnoce_App
         }
 
         public NpgsqlConnection conn;
-        private NpgsqlCommand naredba;
-        private string sql = null;
+        
+       
 
         private void UnesiLijecnika()
         {

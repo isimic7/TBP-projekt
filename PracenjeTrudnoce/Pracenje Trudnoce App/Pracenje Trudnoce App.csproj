@@ -89,6 +89,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormaCTG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormaCTG.Designer.cs">
+      <DependentUpon>FormaCTG.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormaLiječnici.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -101,11 +107,23 @@
     <Compile Include="FormaTrudnice.Designer.cs">
       <DependentUpon>FormaTrudnice.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormaUltrazvuk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormaUltrazvuk.Designer.cs">
+      <DependentUpon>FormaUltrazvuk.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormaUnosLijecnika.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormaUnosLijecnika.Designer.cs">
       <DependentUpon>FormaUnosLijecnika.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormKontrola.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormKontrola.Designer.cs">
+      <DependentUpon>FormKontrola.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -115,14 +133,23 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormaCTG.resx">
+      <DependentUpon>FormaCTG.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormaLiječnici.resx">
       <DependentUpon>FormaLiječnici.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormaTrudnice.resx">
       <DependentUpon>FormaTrudnice.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormaUltrazvuk.resx">
+      <DependentUpon>FormaUltrazvuk.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormaUnosLijecnika.resx">
       <DependentUpon>FormaUnosLijecnika.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormKontrola.resx">
+      <DependentUpon>FormKontrola.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
