@@ -107,6 +107,19 @@ namespace Pracenje_Trudnoce_App
             }                         
         }
 
+        void obrisiKontrolu()
+        {
+            string kontrola = dgvKontrola.SelectedRows[0].Cells[0].Value.ToString();
+            if (kontrola != null)
+            {
+                conn.Open();
+                sql = "delete from kontrola where kontrola_id = :_kontrola";
+                naredba.Parameters.Add(new NpgsqlParameter(":_kontrola", oznaciKontrolu()));
+                naredba.ExecuteNonQuery();
+                conn.Close();
+            }
+        }
+
 
 
         private void FormKontrola_Load(object sender, EventArgs e)
@@ -119,6 +132,12 @@ namespace Pracenje_Trudnoce_App
         private void button1_Click(object sender, EventArgs e)
         {
             dopuniKontrolu();
+            dohvatiKontrole();
+        }
+
+        private void btnObrisiKontrolu_Click(object sender, EventArgs e)
+        {
+            obrisiKontrolu();
             dohvatiKontrole();
         }
     }

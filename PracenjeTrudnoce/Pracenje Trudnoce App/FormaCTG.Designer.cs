@@ -38,6 +38,7 @@
             this.btnDopuniCTG = new System.Windows.Forms.Button();
             this.dgvLijecnici = new System.Windows.Forms.DataGridView();
             this.richOPIS = new System.Windows.Forms.RichTextBox();
+            this.btnObrisiCTG = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSpremnCTG)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCTG)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLijecnici)).BeginInit();
@@ -135,11 +136,22 @@
             this.richOPIS.TabIndex = 10;
             this.richOPIS.Text = "";
             // 
+            // btnObrisiCTG
+            // 
+            this.btnObrisiCTG.Location = new System.Drawing.Point(1024, 253);
+            this.btnObrisiCTG.Name = "btnObrisiCTG";
+            this.btnObrisiCTG.Size = new System.Drawing.Size(91, 44);
+            this.btnObrisiCTG.TabIndex = 11;
+            this.btnObrisiCTG.Text = "Obriši zapis";
+            this.btnObrisiCTG.UseVisualStyleBackColor = true;
+            this.btnObrisiCTG.Click += new System.EventHandler(this.btnObrisiCTG_Click);
+            // 
             // FormaCTG
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1142, 450);
+            this.Controls.Add(this.btnObrisiCTG);
             this.Controls.Add(this.richOPIS);
             this.Controls.Add(this.dgvLijecnici);
             this.Controls.Add(this.btnDopuniCTG);
@@ -173,5 +185,6 @@
         private System.Windows.Forms.Button btnDopuniCTG;
         private System.Windows.Forms.DataGridView dgvLijecnici;
         private System.Windows.Forms.RichTextBox richOPIS;
+        private System.Windows.Forms.Button btnObrisiCTG;
     }
 }

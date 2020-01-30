@@ -125,6 +125,15 @@ namespace Pracenje_Trudnoce_App
             }
         }
 
+        private void obrisiUltrazvuk()
+        {
+            conn.Open();
+            sql = "delete from ultrazvuk where ultrazvuk_id = :_ultrazvuk";
+            naredba = new NpgsqlCommand(sql, conn);
+            naredba.Parameters.Add(new NpgsqlParameter(":_ultrazvuk", OznaciUltrazvuk()));
+            conn.Close();
+        }
+
         private void FormaUltrazvuk_Load(object sender, EventArgs e)
         {
             ucitajUltrazvuke();
@@ -145,6 +154,12 @@ namespace Pracenje_Trudnoce_App
         {
             dopuniUltrazvuk();
             
+            ucitajUltrazvuke();
+        }
+
+        private void btnObrisiUltrazvuk_Click(object sender, EventArgs e)
+        {
+            obrisiUltrazvuk();
             ucitajUltrazvuke();
         }
     }

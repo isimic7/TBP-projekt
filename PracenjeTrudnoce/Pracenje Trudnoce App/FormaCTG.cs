@@ -123,6 +123,20 @@ namespace Pracenje_Trudnoce_App
             
         }
 
+        void obrisiCTG()
+        {
+            string ctg = dgvCTG.SelectedRows[0].Cells[0].Value.ToString();
+            if (ctg != null)
+            {
+                conn.Open();
+                sql = @"delete from ctg where ctg_id = :_ctg";
+                naredba = new NpgsqlCommand(sql, conn);
+                naredba.Parameters.Add(new NpgsqlParameter(":_ctg",int.Parse(ctg)));
+                naredba.ExecuteNonQuery();
+                conn.Close();
+            }
+        }
+
        
 
         private void FormaCTG_Load(object sender, EventArgs e)
@@ -143,6 +157,12 @@ namespace Pracenje_Trudnoce_App
         private void button1_Click(object sender, EventArgs e)
         {
             dopuniCTG();
+            dohvatiSveCTG();
+        }
+
+        private void btnObrisiCTG_Click(object sender, EventArgs e)
+        {
+            obrisiCTG();
             dohvatiSveCTG();
         }
     }

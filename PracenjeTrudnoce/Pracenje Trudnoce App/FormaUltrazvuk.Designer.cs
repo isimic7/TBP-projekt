@@ -39,6 +39,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.dgvLijecnici = new System.Windows.Forms.DataGridView();
             this.btnDopuniUltrazvuk = new System.Windows.Forms.Button();
+            this.btnObrisiUltrazvuk = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvUltrazvuci)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLijecnici)).BeginInit();
             this.SuspendLayout();
@@ -174,11 +175,22 @@
             this.btnDopuniUltrazvuk.UseVisualStyleBackColor = true;
             this.btnDopuniUltrazvuk.Click += new System.EventHandler(this.btnDopuniUltrazvuk_Click);
             // 
+            // btnObrisiUltrazvuk
+            // 
+            this.btnObrisiUltrazvuk.Location = new System.Drawing.Point(13, 359);
+            this.btnObrisiUltrazvuk.Name = "btnObrisiUltrazvuk";
+            this.btnObrisiUltrazvuk.Size = new System.Drawing.Size(112, 55);
+            this.btnObrisiUltrazvuk.TabIndex = 12;
+            this.btnObrisiUltrazvuk.Text = "Obriši zapis";
+            this.btnObrisiUltrazvuk.UseVisualStyleBackColor = true;
+            this.btnObrisiUltrazvuk.Click += new System.EventHandler(this.btnObrisiUltrazvuk_Click);
+            // 
             // FormaUltrazvuk
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(796, 438);
+            this.Controls.Add(this.btnObrisiUltrazvuk);
             this.Controls.Add(this.btnDopuniUltrazvuk);
             this.Controls.Add(this.dgvLijecnici);
             this.Controls.Add(this.label3);
@@ -213,5 +225,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DataGridView dgvLijecnici;
         private System.Windows.Forms.Button btnDopuniUltrazvuk;
+        private System.Windows.Forms.Button btnObrisiUltrazvuk;
     }
 }
