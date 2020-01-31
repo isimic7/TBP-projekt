@@ -131,6 +131,7 @@ namespace Pracenje_Trudnoce_App
             sql = "delete from ultrazvuk where ultrazvuk_id = :_ultrazvuk";
             naredba = new NpgsqlCommand(sql, conn);
             naredba.Parameters.Add(new NpgsqlParameter(":_ultrazvuk", OznaciUltrazvuk()));
+            naredba.ExecuteNonQuery();
             conn.Close();
         }
 

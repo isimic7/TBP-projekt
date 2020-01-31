@@ -31,6 +31,7 @@
             this.dgvLijecnici = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.btnUnesiLijecnika = new System.Windows.Forms.Button();
+            this.btnObrisiLijecnika = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLijecnici)).BeginInit();
             this.SuspendLayout();
             // 
@@ -55,7 +56,7 @@
             // 
             // btnUnesiLijecnika
             // 
-            this.btnUnesiLijecnika.Location = new System.Drawing.Point(12, 219);
+            this.btnUnesiLijecnika.Location = new System.Drawing.Point(15, 219);
             this.btnUnesiLijecnika.Name = "btnUnesiLijecnika";
             this.btnUnesiLijecnika.Size = new System.Drawing.Size(108, 44);
             this.btnUnesiLijecnika.TabIndex = 2;
@@ -63,11 +64,22 @@
             this.btnUnesiLijecnika.UseVisualStyleBackColor = true;
             this.btnUnesiLijecnika.Click += new System.EventHandler(this.btnUnesiLijecnika_Click);
             // 
+            // btnObrisiLijecnika
+            // 
+            this.btnObrisiLijecnika.Location = new System.Drawing.Point(269, 219);
+            this.btnObrisiLijecnika.Name = "btnObrisiLijecnika";
+            this.btnObrisiLijecnika.Size = new System.Drawing.Size(108, 44);
+            this.btnObrisiLijecnika.TabIndex = 3;
+            this.btnObrisiLijecnika.Text = "Obriši odabranog liječnika";
+            this.btnObrisiLijecnika.UseVisualStyleBackColor = true;
+            this.btnObrisiLijecnika.Click += new System.EventHandler(this.btnObrisiLijecnika_Click);
+            // 
             // FormaLiječnici
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(492, 295);
+            this.Controls.Add(this.btnObrisiLijecnika);
             this.Controls.Add(this.btnUnesiLijecnika);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dgvLijecnici);
@@ -85,5 +97,6 @@
         private System.Windows.Forms.DataGridView dgvLijecnici;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnUnesiLijecnika;
+        private System.Windows.Forms.Button btnObrisiLijecnika;
     }
 }

@@ -123,18 +123,32 @@ namespace Pracenje_Trudnoce_App
             
         }
 
+        private int oznaciCTG()
+        {
+            string idCTG = null;
+            int index = -1;
+
+            index = dgvCTG.SelectedRows[0].Index;
+            if (index != -1)
+            {
+                idCTG = dgvCTG.SelectedRows[0].Cells["ctg_id"].Value.ToString();
+            }
+
+            return int.Parse(idCTG);
+        }
+
         void obrisiCTG()
         {
-            string ctg = dgvCTG.SelectedRows[0].Cells[0].Value.ToString();
-            if (ctg != null)
-            {
+            //string ctg = dgvCTG.SelectedRows[0].Cells[0].Value.ToString();
+            //if (ctg != null)
+            //{
                 conn.Open();
                 sql = @"delete from ctg where ctg_id = :_ctg";
                 naredba = new NpgsqlCommand(sql, conn);
-                naredba.Parameters.Add(new NpgsqlParameter(":_ctg",int.Parse(ctg)));
+                naredba.Parameters.Add(new NpgsqlParameter(":_ctg",oznaciCTG()));
                 naredba.ExecuteNonQuery();
                 conn.Close();
-            }
+            //}
         }
 
        

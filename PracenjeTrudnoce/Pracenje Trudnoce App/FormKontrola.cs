@@ -109,15 +109,16 @@ namespace Pracenje_Trudnoce_App
 
         void obrisiKontrolu()
         {
-            string kontrola = dgvKontrola.SelectedRows[0].Cells[0].Value.ToString();
-            if (kontrola != null)
-            {
+            //string kontrola = dgvKontrola.SelectedRows[0].Cells[0].Value.ToString();
+            //if (kontrola != null)
+            //{
                 conn.Open();
-                sql = "delete from kontrola where kontrola_id = :_kontrola";
+                sql = @"delete from kontrola where kontrola_id = :_kontrola";
+                naredba = new NpgsqlCommand(sql, conn);
                 naredba.Parameters.Add(new NpgsqlParameter(":_kontrola", oznaciKontrolu()));
                 naredba.ExecuteNonQuery();
                 conn.Close();
-            }
+            //}
         }
 
 

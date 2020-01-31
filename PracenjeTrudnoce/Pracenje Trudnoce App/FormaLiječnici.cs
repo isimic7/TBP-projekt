@@ -25,6 +25,30 @@ namespace Pracenje_Trudnoce_App
         private NpgsqlCommand naredba;
         private string sql = null;
 
+        private int oznaciLijecnika()
+        {
+            string idLijecnik = null;
+            int index = -1;
+
+            index = dgvLijecnici.SelectedRows[0].Index;
+            if (index != -1)
+            {
+                idLijecnik = dgvLijecnici.SelectedRows[0].Cells["lijecnik_id"].Value.ToString();
+            }
+
+            return int.Parse(idLijecnik);
+        }
+
+        void obrisiLijecnika()
+        { 
+            conn.Open();
+            sql = @"delete from lijecnik where lijecnik_id = :_lijecnik";
+            naredba = new NpgsqlCommand(sql, conn);
+            naredba.Parameters.Add(new NpgsqlParameter(":_lijecnik", oznaciLijecnika()));
+            naredba.ExecuteNonQuery();
+            conn.Close();
+        }
+
         private void prikaziLijecnike()
         {
             conn = new NpgsqlConnection(konekcija);
@@ -49,6 +73,12 @@ namespace Pracenje_Trudnoce_App
         {
             FormaUnosLijecnika forma = new FormaUnosLijecnika(konekcija);
             forma.ShowDialog();
+            prikaziLijecnike();
+        }
+
+        private void btnObrisiLijecnika_Click(object sender, EventArgs e)
+        {
+            obrisiLijecnika();
             prikaziLijecnike();
         }
     }
