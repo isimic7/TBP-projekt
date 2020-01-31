@@ -1,2 +1,2 @@
 # TBP-projekt
-Projekt iz kolegija TBP
+Aplikacija za praćenje trudnoće
